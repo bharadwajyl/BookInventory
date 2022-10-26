@@ -1,0 +1,84 @@
+table{
+    width:100%;
+    color:var(--gray);
+    border:1px solid rgba(255,255,255,0.1);
+    border-collapse:collapse;
+}
+
+table th{
+    background-color:var(--black);
+}
+
+td, th{
+    padding:0.5rem;
+    text-align:left;
+}
+
+td{
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+table td:nth-child(1), table th:nth-child(1){
+width:3%;
+}
+
+table td:nth-child(2), table th:nth-child(2){
+    width:5%;
+}
+
+table td:not(:nth-child(3)), table th:not(:nth-child(3)){
+    text-align:center;
+}
+
+table td:nth-child(3), table th:nth-child(3){
+    width:50%;
+}
+
+table tr{
+    transition:0.5s;
+}
+
+table tr:hover{
+    background-color:#525252;
+}
+
+table .dropdown{
+    padding:0.5rem;
+    background-color:var(--primary);
+}
+
+table .dropdown a{
+    color:var(--lite);
+}
+
+table .dropdown-content{
+    transform:translate(-50%, 33%);
+}
+
+/*Action*/
+.action{
+    position:fixed;
+    top:50%;
+    right:-10%;
+    transform:translate(-50%, 0%);
+    background-color:var(--black);
+    z-index:9;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    transition:0.5s;
+    text-align:center;
+}
+
+.action a{
+    width:100%;
+    display:block;
+    padding:1rem;
+    color:var(--gray);
+}
+
+.action a:hover{
+    background-color:var(--primary);
+}
+
+.action a:not(:last-child){
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
